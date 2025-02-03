@@ -20,7 +20,7 @@ exports.handler = async function(context, event, callback) {
       }
   
       // Remove 'https://' from context.SERVER if it's included
-      const serverUrl = context.SERVER.replace(/^https?:\/\//, '');
+      const serverUrl = context.NEGROK_URL.replace(/^https?:\/\//, '');
       console.log('Making call with URL:', `https://${serverUrl}/incoming`);
   
       // Create the call pointing to your main application's /incoming endpoint

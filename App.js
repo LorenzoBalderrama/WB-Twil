@@ -10,7 +10,6 @@ const VoiceResponse = require('twilio').twiml.VoiceResponse;
 const { GptService } = require('./services/gpt-service');
 const { recordingService } = require('./services/recording-service');
 const { TextService } = require('./services/text-service');
-const { twilioDocs } = require('./rag-pipeline/RAG');
 const app = express();
 const expressWs = ExpressWs(app);
 const port = 3000;

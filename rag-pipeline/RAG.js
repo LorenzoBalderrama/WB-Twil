@@ -36,4 +36,3 @@ const twilioDocs = [
   "https://www.twilio.com/docs/alpha/ai-assistants/guides/evals"
 ];
 
-export { twilioDocs };
